@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+ 
+<html>
+
+<head>
+   <meta http-equiv = "Content-Type" content = "text/html; charset=ISO-8859-1">
+   <title>Javscript and DHTML</title>
+    <style type="text/css">
+      label, div { 
+			display: inline; 
+			float: left;
+			padding: 0.5em;
+      }
+    </style>
+ </head>
+ 
+ <body onLoad="setInterval('orologio()',1000)">  
+	
+	<form action="#" name="mio_form">
+		<fieldset>
+			<legend>Questionario:</legend>
+			<p><input name = "orologio" type="text" value=" " size="45" readonly="readonly"></p>
+			<script type="text/javascript" src="../scripts/orologio.js"></script>
+			<label>
+				Il tuo nome:<br>
+				<input name="nome" size="15" type="text">
+			</label>
+			<label>
+				La tua parola di accesso:<br>
+				<input name="parola di accesso" size="15" type="password">
+			</label>
+			<label>
+				  Nome del file:<br>
+				<input name="casella_file" size="15" type="file"><br>
+			</label>
+		  <!-- L'uso di label per input multipli produce problemi su mozilla.
+			   Quando la label riceve il focus, lo passa all'input associato.
+			   Il primo item della lista viene sempre selezionato/deselezionato ad ogni click. 
+		  -->
+			<div>
+				Quali dei miei figli preferisci?<br>
+				<input name="figlio" value="Bart" type="checkbox">Bart<br>
+				<input name="figlio" value="Lisa" type="checkbox">Lisa<br>
+				<input name="figlio" value="Maggie" type="checkbox">Maggie
+			</div>
+			<div>Chi &egrave; il pi&ugrave; divertente?<br>
+				<input name="divertente" value="Homer" type="radio">Homer<br>
+				<input name="divertente" value="Bart" type="radio">Bart<br>
+				<input name="divertente" value="Lisa" type="radio">Lisa
+			</div>
+			<label>Scegli dei passatempi:<br>
+				<select multiple="multiple" name="passatempi" size="4">
+					<option value="musica">musica</option>
+					<option value="sport">sport</option>
+					<option value="viaggi">viaggi</option>
+					<option value="letture">letture</option>
+				</select>
+			</label>
+			<label>Il tuo colore preferito:<br>
+				<select name="colore">
+					<option value="rosso">rosso</option>
+					<option value="verde">verde</option>
+					<option value="blu">blu</option>
+					<option value="bianco">bianco</option>
+					<option value="viola">viola</option>
+					<option value="nero">nero</option>
+				</select>
+			</label>
+			<label>
+				 Eventi in ingresso:<br>
+				<textarea name="area_testo" rows="20" cols="64"></textarea>
+			</label>
+			<label>
+			  Pulsanti:&nbsp;
+				<input name="bottone_svuota" value="svuota eventi" type="button">&nbsp;
+				<input name="bottone_sottometti" value="sottometti" type="submit">&nbsp;
+				<input name="bottone_azzera" value="azzera" type="reset">
+			</label>
+		</fieldset>
+	</form>
+	
+	<script type="text/javascript" src="../scripts/questionario.js"></script>
+	
+	<form action="#" name="form_mess">
+		<fieldset>
+			<legend>Messaggi:</legend>
+			<label>
+			  Inserisci un breve messaggio:<br>
+			  <textarea name="messaggio_testo" rows="3" cols="24" onKeyUp="aggiorna(document.form_mess)" id="orologio" ></textarea><br>
+			  <input name="contatore" type="text" value="64" size="2" readonly="readonly">
+			</label>
+		</fieldset>
+	</form>
+	
+	<script type="text/javascript" src="../scripts/sms.js"></script>
+	
+ </body>
+</html>

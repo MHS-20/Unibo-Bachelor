@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<div><p>Inserisci le cose da fare nella lista</p></div>
+<div>
+	<input type="text" name="todo" />
+	<button id="insert">Inserisci</button>
+	<button id="first">First</button>
+	<button id="last">Last</button>
+	<button id="even">Even</button>
+	<button id="odd">Odd</button>
+</div>
+<br/>
+<div>
+	Cancella i-esimo elemento <input type="text" name="remove" />
+	<button id="cancella">Cancella</button>
+</div>
+<div id="contenitore">
+<h2>TO DO List</h2>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#contenitore').append('<ul id="lista"></ul>');
+		$('#insert').on('click', function(e){
+			var todo = $('[name="todo"]').val();
+			$('[name="todo"]').val('');
+			var html = '<li>' + todo + '</li>';
+			$('#lista').append(html);
+		});
+
+		$('#first').on('click', function(e){
+			$('#lista li').css('background-color','');
+			$('li:first').css('background-color','yellow');
+					});
+
+		$('#even').on('click', function(e){
+			$('#lista li').css('background-color','');
+			$('li:even').css('background-color','yellow');
+					});
+
+		$('#odd').on('click', function(e){
+			$('#lista li').css('background-color','');
+			$('li:odd').css('background-color','yellow');
+					});
+
+		$('#last').on('click', function(e){
+			$('#lista li').css('background-color','');
+			$('li:last').css('background-color','yellow');
+		});
+
+		$('#cancella').on('click', function(e){
+			var number = $('[name="remove"]').val();
+			if (!$.isNumeric(number)){
+				alert('Cancella non e numero');
+				return false;
+			}
+
+			if ($('#lista li').length < number){
+				alert('Numero maggiore delle occorrenze');
+				return false;
+			}
+
+			var occorrenza = number - 1;
+			$('#lista li').eq(occorrenza).remove();
+
+		});
+	});
+</script>
+</body>
+</html>

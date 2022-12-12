@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colorize Me</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<p>TO DO: Alla pressione del bottone, cambiare il colore di sfondo della pagina col rispettivo colore</p>
+<button name="rosso">ROSSO</button>
+<button class="verde">VERDE</button>
+<button id="giallo">GIALLO</button>
+<br/><br/><br/>
+<button name="reset">Reset</button>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				$('[name=rosso]').on('click', function(e){
+
+					$('body').css('background-color','');
+					$('body').css('background-color','red');
+					$('p').css('color','purple');
+				});
+
+				$('.verde').on('click', function(e){
+
+					$('body').css('background-color','');
+					$('body').css('background-color','green');
+					$('p').css('color','white');
+				});
+
+				$('#giallo').on('click', function(e){
+
+					$('body').css('background-color','');
+					$('body').css('background-color','yellow');
+					$('p').css('color','blue');
+				});
+
+
+				$('[name=reset]').on('click', function(e){
+
+					$('body').css('background-color','');
+					$('p').css('color','black');
+				});
+
+			});
+
+
+
+		</script>
+
+</body>
+</html>

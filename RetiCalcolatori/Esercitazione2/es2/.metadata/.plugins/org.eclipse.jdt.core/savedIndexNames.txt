@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/LABS/s0000969902/Documents/Esercitazione2/srcSvolta2/.metadata/.plugins/org.eclipse.jdt.core
+2303209708.index

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<button data-role="myCall">Chiamata al Server</button>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+		var first = false;
+		$('[data-role="myCall"]').click(function(e){
+			$('body').append('<p data-role="mioClick">Click</p>');
+		});
+
+
+
+		$('body').on('click', '[data-role="mioClick"]:first-of-type', function(e){
+			var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+			$('body').css('background-color', color);
+		});
+
+
+
+	});
+	</script>
+</body>
+</html>
