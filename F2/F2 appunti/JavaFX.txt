@@ -1,4 +1,0 @@
-SalmanMuhamadHuseyn-0000969902
-
---module-path="C:\applicativi\moduli\javafx-sdk-17.0.2\lib"
---add-modules=javafx.controls
