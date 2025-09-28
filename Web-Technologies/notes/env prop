@@ -1,6 +1,0 @@
-#JRE
-jdk.home=/home/Sentinel/Downloads/jdk-19
-
-# WebServer
-server.home=/home/Sentinel/Downloads/apache-tomcat-9.0.22
-deploy.path=${server.home}/webapps
