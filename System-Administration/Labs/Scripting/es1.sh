@@ -1,0 +1,1 @@
+ls -R | egrep '\..+$' | rev | cut -f1 -d. | rev | sort | uniq -c | sort -R | head -n5

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="03a_TecWeb/src"/>
+	<classpathentry kind="lib" path="03a_TecWeb/lib/00_TecWeb_solved.jar"/>
+	<classpathentry kind="lib" path="03a_TecWeb/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="03a_TecWeb/lib/junit4_4.3.1.jar"/>
+	<classpathentry kind="lib" path="03a_TecWeb/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="03a_TecWeb/lib/soap.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="03a_TecWeb/bin"/>
+</classpath>
