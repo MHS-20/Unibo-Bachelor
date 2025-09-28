@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE recipes SYSTEM "Appendice/Ricette.dtd">
+
+<recipes>
+	<recipe>
+		<recipe_head>
+			<recipe_name>Cold Salmon in Creamy Spiced Sauce</recipe_name>
+			<recipe_author>Hilaire Walden</recipe_author>
+			<meal_type>Fish and Shellfish</meal_type>
+		</recipe_head>
+		<recipe_body>
+			<ingredients>
+				<ingredient>1/2 teaspoon finely crushed cumin seeds</ingredient>
+				<ingredient>1 teaspoon chilli powder</ingredient>
+				<ingredient>salt and freshly ground black pepper</ingredient>
+			</ingredients>
+			<directions>
+				<direction>Mix together the cumin seeds, chilli powder and pepper and rub into the fish.</direction>
+				<direction>Heat the oil in a frying pan, add the garlic and ginger and heat until they sizzle.</direction>
+			</directions>
+		</recipe_body>
+		<recipe_footer>
+			<serving>4</serving>
+			<preparation_time>15 minutes</preparation_time>
+		</recipe_footer>
+	</recipe>
+	
+	<document_info>
+		<document_author>Hilaire Walden</document_author>
+		<date_updated>09/03/2011</date_updated>
+		<source>Easy to Cook, Hot and Spicy</source>
+	</document_info>
+</recipes>
